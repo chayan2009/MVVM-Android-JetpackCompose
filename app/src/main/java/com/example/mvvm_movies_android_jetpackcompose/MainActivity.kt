@@ -61,7 +61,6 @@ class MainActivity : ComponentActivity() {
                                 productList!!.isEmpty() -> {
                                     Text(text = "No products available", modifier = Modifier.padding(16.dp))
                                 }
-
                                 else -> {
                                     val product = productList!!.find { it.id == productId }
                                     product?.let {
